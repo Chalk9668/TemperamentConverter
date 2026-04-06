@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,4 +117,396 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 397</value>
+  </data>
+  <data name="CancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 29</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CancelButton.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Name" xml:space="preserve">
+    <value>CancelButton</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Reconvert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 397</value>
+  </data>
+  <data name="Reconvert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 29</value>
+  </data>
+  <data name="Reconvert.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Reconvert.Text" xml:space="preserve">
+    <value>12EDOに戻す</value>
+  </data>
+  <data name="&gt;&gt;Reconvert.Name" xml:space="preserve">
+    <value>Reconvert</value>
+  </data>
+  <data name="&gt;&gt;Reconvert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Reconvert.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Reconvert.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ApplyTuning.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ApplyTuning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 397</value>
+  </data>
+  <data name="ApplyTuning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 29</value>
+  </data>
+  <data name="ApplyTuning.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ApplyTuning.Text" xml:space="preserve">
+    <value>調律を適用</value>
+  </data>
+  <data name="&gt;&gt;ApplyTuning.Name" xml:space="preserve">
+    <value>ApplyTuning</value>
+  </data>
+  <data name="&gt;&gt;ApplyTuning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ApplyTuning.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ApplyTuning.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="SaveTuning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 397</value>
+  </data>
+  <data name="SaveTuning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 29</value>
+  </data>
+  <data name="SaveTuning.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SaveTuning.Text" xml:space="preserve">
+    <value>調律を保存</value>
+  </data>
+  <data name="&gt;&gt;SaveTuning.Name" xml:space="preserve">
+    <value>SaveTuning</value>
+  </data>
+  <data name="&gt;&gt;SaveTuning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SaveTuning.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SaveTuning.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Notation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Notation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 240</value>
+  </data>
+  <data name="Notation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 125</value>
+  </data>
+  <data name="Notation.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Notation.Text" xml:space="preserve">
+    <value>未実装の機能:
+・調律の保存、ロード機能
+・音階のプリセット
+
+ご不便をおかけします
+</value>
+  </data>
+  <data name="&gt;&gt;Notation.Name" xml:space="preserve">
+    <value>Notation</value>
+  </data>
+  <data name="&gt;&gt;Notation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Notation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Notation.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 397</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 29</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>調律をロード</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="TuningText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TuningText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 107</value>
+  </data>
+  <data name="TuningText.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="TuningText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 25</value>
+  </data>
+  <data name="TuningText.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="TuningText.Text" xml:space="preserve">
+    <value>分割法</value>
+  </data>
+  <data name="&gt;&gt;TuningText.Name" xml:space="preserve">
+    <value>TuningText</value>
+  </data>
+  <data name="&gt;&gt;TuningText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TuningText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TuningText.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="BaseFreqText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BaseFreqText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 57</value>
+  </data>
+  <data name="BaseFreqText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 25</value>
+  </data>
+  <data name="BaseFreqText.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="BaseFreqText.Text" xml:space="preserve">
+    <value>基準周波数</value>
+  </data>
+  <data name="&gt;&gt;BaseFreqText.Name" xml:space="preserve">
+    <value>BaseFreqText</value>
+  </data>
+  <data name="&gt;&gt;BaseFreqText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BaseFreqText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BaseFreqText.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ScaleText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ScaleText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 163</value>
+  </data>
+  <data name="ScaleText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 25</value>
+  </data>
+  <data name="ScaleText.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ScaleText.Text" xml:space="preserve">
+    <value>音階定義</value>
+  </data>
+  <data name="&gt;&gt;ScaleText.Name" xml:space="preserve">
+    <value>ScaleText</value>
+  </data>
+  <data name="&gt;&gt;ScaleText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ScaleText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ScaleText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="InputBaseFreq.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 54</value>
+  </data>
+  <data name="InputBaseFreq.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 31</value>
+  </data>
+  <data name="InputBaseFreq.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="InputBaseFreq.Text" xml:space="preserve">
+    <value>C4=261.6256</value>
+  </data>
+  <data name="&gt;&gt;InputBaseFreq.Name" xml:space="preserve">
+    <value>InputBaseFreq</value>
+  </data>
+  <data name="&gt;&gt;InputBaseFreq.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InputBaseFreq.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;InputBaseFreq.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DoTuning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 105</value>
+  </data>
+  <data name="DoTuning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 29</value>
+  </data>
+  <data name="DoTuning.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="DoTuning.Text" xml:space="preserve">
+    <value>分割設定を開く</value>
+  </data>
+  <data name="&gt;&gt;DoTuning.Name" xml:space="preserve">
+    <value>DoTuning</value>
+  </data>
+  <data name="&gt;&gt;DoTuning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoTuning.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DoTuning.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SamplerSelect.Items" xml:space="preserve">
+    <value>MoreSampler</value>
+  </data>
+  <data name="SamplerSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 6</value>
+  </data>
+  <data name="SamplerSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 33</value>
+  </data>
+  <data name="SamplerSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;SamplerSelect.Name" xml:space="preserve">
+    <value>SamplerSelect</value>
+  </data>
+  <data name="&gt;&gt;SamplerSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SamplerSelect.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SamplerSelect.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SamplerText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SamplerText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SamplerText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 9</value>
+  </data>
+  <data name="SamplerText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 25</value>
+  </data>
+  <data name="SamplerText.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="SamplerText.Text" xml:space="preserve">
+    <value>サンプラー</value>
+  </data>
+  <data name="&gt;&gt;SamplerText.Name" xml:space="preserve">
+    <value>SamplerText</value>
+  </data>
+  <data name="&gt;&gt;SamplerText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SamplerText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SamplerText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DoScale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DoScale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 161</value>
+  </data>
+  <data name="DoScale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 29</value>
+  </data>
+  <data name="DoScale.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="DoScale.Text" xml:space="preserve">
+    <value>音階設定を開く</value>
+  </data>
+  <data name="&gt;&gt;DoScale.Name" xml:space="preserve">
+    <value>DoScale</value>
+  </data>
+  <data name="&gt;&gt;DoScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DoScale.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DoScale.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>792, 453</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>改弦更張（仮）</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
