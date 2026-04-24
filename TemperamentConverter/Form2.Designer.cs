@@ -45,27 +45,30 @@
             MeantoneDirection = new Label();
             SizeOf5th = new Label();
             Meantone5thUpDown = new NumericUpDown();
-            JIPanel = new Panel();
-            JIDirection = new Label();
-            textBox1 = new TextBox();
-            JIIndicate = new Label();
-            JIonsuuUpDown = new NumericUpDown();
-            onnsuu = new Label();
             UserDifinePanel = new Panel();
             UserDifineDirection = new Label();
             UserDifinePitches = new TextBox();
             UserDifineCents = new Label();
             UserDifineUpDown = new NumericUpDown();
             UserDifineOnnsuu = new Label();
+            JIPanel = new Panel();
+            JIDirection = new Label();
+            textBox1 = new TextBox();
+            JIIndicate = new Label();
+            JIonsuuUpDown = new NumericUpDown();
+            onnsuu = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             EDOPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nEDOselect).BeginInit();
             MeantonePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MeantoneOnnsuuUpDown).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Meantone5thUpDown).BeginInit();
-            JIPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)JIonsuuUpDown).BeginInit();
             UserDifinePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)UserDifineUpDown).BeginInit();
+            JIPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)JIonsuuUpDown).BeginInit();
             SuspendLayout();
             // 
             // TuningClose
@@ -86,6 +89,7 @@
             TuningApply.TabIndex = 1;
             TuningApply.Text = "適用";
             TuningApply.UseVisualStyleBackColor = true;
+            TuningApply.Click += TuningApply_Click;
             // 
             // nEDORadio
             // 
@@ -155,6 +159,7 @@
             IndicateEDO1step.Size = new Size(59, 25);
             IndicateEDO1step.TabIndex = 3;
             IndicateEDO1step.Text = "label1";
+            IndicateEDO1step.Click += IndicateEDO1step_Click;
             // 
             // EDODirection
             // 
@@ -175,6 +180,7 @@
             nEDOselect.Size = new Size(150, 31);
             nEDOselect.TabIndex = 1;
             nEDOselect.Value = new decimal(new int[] { 31, 0, 0, 0 });
+            nEDOselect.ValueChanged += nEDOselect_ValueChanged;
             // 
             // SayEDOn
             // 
@@ -192,7 +198,7 @@
             MeantonePanel.Controls.Add(MeantoneDirection);
             MeantonePanel.Controls.Add(SizeOf5th);
             MeantonePanel.Controls.Add(Meantone5thUpDown);
-            MeantonePanel.Location = new Point(64, 128);
+            MeantonePanel.Location = new Point(199, 390);
             MeantonePanel.Name = "MeantonePanel";
             MeantonePanel.Size = new Size(256, 256);
             MeantonePanel.TabIndex = 7;
@@ -247,6 +253,64 @@
             Meantone5thUpDown.TabIndex = 0;
             Meantone5thUpDown.Value = new decimal(new int[] { 537, 0, 0, -2147352576 });
             // 
+            // UserDifinePanel
+            // 
+            UserDifinePanel.Controls.Add(UserDifineDirection);
+            UserDifinePanel.Controls.Add(UserDifinePitches);
+            UserDifinePanel.Controls.Add(UserDifineCents);
+            UserDifinePanel.Controls.Add(UserDifineUpDown);
+            UserDifinePanel.Controls.Add(UserDifineOnnsuu);
+            UserDifinePanel.Location = new Point(52, 423);
+            UserDifinePanel.Name = "UserDifinePanel";
+            UserDifinePanel.Size = new Size(256, 256);
+            UserDifinePanel.TabIndex = 9;
+            // 
+            // UserDifineDirection
+            // 
+            UserDifineDirection.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UserDifineDirection.Location = new Point(11, 129);
+            UserDifineDirection.Name = "UserDifineDirection";
+            UserDifineDirection.Size = new Size(231, 123);
+            UserDifineDirection.TabIndex = 4;
+            UserDifineDirection.Text = "音数を決め、各step毎の純正比を入力してください。必ず音数と純正比の数を合わせてください。[ignore]が入ったstepはt0として書き出します。5-limit JIだったら、[1/1, 16/15, 9/8, 6/5, 5/4, 4/3, ignore, 3/2, 8/5, 5/3, 9/5, 15/8]のように書きます。\r\n\r\n";
+            // 
+            // UserDifinePitches
+            // 
+            UserDifinePitches.Location = new Point(3, 95);
+            UserDifinePitches.Name = "UserDifinePitches";
+            UserDifinePitches.Size = new Size(250, 31);
+            UserDifinePitches.TabIndex = 3;
+            UserDifinePitches.TextChanged += UserDifinePitches_TextChanged;
+            // 
+            // UserDifineCents
+            // 
+            UserDifineCents.AutoSize = true;
+            UserDifineCents.Location = new Point(65, 65);
+            UserDifineCents.Name = "UserDifineCents";
+            UserDifineCents.Size = new Size(136, 25);
+            UserDifineCents.TabIndex = 2;
+            UserDifineCents.Text = "ユーザ定義分割";
+            // 
+            // UserDifineUpDown
+            // 
+            UserDifineUpDown.Location = new Point(92, 24);
+            UserDifineUpDown.Maximum = new decimal(new int[] { 0, 1, 0, 0 });
+            UserDifineUpDown.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            UserDifineUpDown.Name = "UserDifineUpDown";
+            UserDifineUpDown.Size = new Size(150, 31);
+            UserDifineUpDown.TabIndex = 1;
+            UserDifineUpDown.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            UserDifineUpDown.ValueChanged += UserDifineUpDown_ValueChanged;
+            // 
+            // UserDifineOnnsuu
+            // 
+            UserDifineOnnsuu.AutoSize = true;
+            UserDifineOnnsuu.Location = new Point(26, 26);
+            UserDifineOnnsuu.Name = "UserDifineOnnsuu";
+            UserDifineOnnsuu.Size = new Size(50, 25);
+            UserDifineOnnsuu.TabIndex = 0;
+            UserDifineOnnsuu.Text = "音数";
+            // 
             // JIPanel
             // 
             JIPanel.Controls.Add(JIDirection);
@@ -254,7 +318,7 @@
             JIPanel.Controls.Add(JIIndicate);
             JIPanel.Controls.Add(JIonsuuUpDown);
             JIPanel.Controls.Add(onnsuu);
-            JIPanel.Location = new Point(64, 128);
+            JIPanel.Location = new Point(357, 87);
             JIPanel.Name = "JIPanel";
             JIPanel.Size = new Size(256, 256);
             JIPanel.TabIndex = 8;
@@ -303,67 +367,44 @@
             onnsuu.TabIndex = 0;
             onnsuu.Text = "音数";
             // 
-            // UserDifinePanel
+            // label1
             // 
-            UserDifinePanel.Controls.Add(UserDifineDirection);
-            UserDifinePanel.Controls.Add(UserDifinePitches);
-            UserDifinePanel.Controls.Add(UserDifineCents);
-            UserDifinePanel.Controls.Add(UserDifineUpDown);
-            UserDifinePanel.Controls.Add(UserDifineOnnsuu);
-            UserDifinePanel.Location = new Point(64, 128);
-            UserDifinePanel.Name = "UserDifinePanel";
-            UserDifinePanel.Size = new Size(256, 256);
-            UserDifinePanel.TabIndex = 9;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.8F);
+            label1.Location = new Point(225, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(40, 38);
+            label1.TabIndex = 10;
+            label1.Text = "✘";
             // 
-            // UserDifineDirection
+            // label2
             // 
-            UserDifineDirection.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            UserDifineDirection.Location = new Point(11, 129);
-            UserDifineDirection.Name = "UserDifineDirection";
-            UserDifineDirection.Size = new Size(231, 123);
-            UserDifineDirection.TabIndex = 4;
-            UserDifineDirection.Text = "音数を決め、各step毎の純正比を入力してください。必ず音数と純正比の数を合わせてください。[ignore]が入ったstepはt0として書き出します。5-limit JIだったら、[1/1, 16/15, 9/8, 6/5, 5/4, 4/3, ignore, 3/2, 8/5, 5/3, 9/5, 15/8]のように書きます。\r\n\r\n";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 16.8F);
+            label2.Location = new Point(185, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 38);
+            label2.TabIndex = 11;
+            label2.Text = "✘";
             // 
-            // UserDifinePitches
+            // label3
             // 
-            UserDifinePitches.Location = new Point(3, 95);
-            UserDifinePitches.Name = "UserDifinePitches";
-            UserDifinePitches.Size = new Size(250, 31);
-            UserDifinePitches.TabIndex = 3;
-            // 
-            // UserDifineCents
-            // 
-            UserDifineCents.AutoSize = true;
-            UserDifineCents.Location = new Point(65, 65);
-            UserDifineCents.Name = "UserDifineCents";
-            UserDifineCents.Size = new Size(136, 25);
-            UserDifineCents.TabIndex = 2;
-            UserDifineCents.Text = "ユーザ定義分割";
-            // 
-            // UserDifineUpDown
-            // 
-            UserDifineUpDown.Location = new Point(92, 24);
-            UserDifineUpDown.Maximum = new decimal(new int[] { 0, 1, 0, 0 });
-            UserDifineUpDown.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            UserDifineUpDown.Name = "UserDifineUpDown";
-            UserDifineUpDown.Size = new Size(150, 31);
-            UserDifineUpDown.TabIndex = 1;
-            UserDifineUpDown.Value = new decimal(new int[] { 0, 1, 0, 0 });
-            // 
-            // UserDifineOnnsuu
-            // 
-            UserDifineOnnsuu.AutoSize = true;
-            UserDifineOnnsuu.Location = new Point(26, 26);
-            UserDifineOnnsuu.Name = "UserDifineOnnsuu";
-            UserDifineOnnsuu.Size = new Size(50, 25);
-            UserDifineOnnsuu.TabIndex = 0;
-            UserDifineOnnsuu.Text = "音数";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 16.8F);
+            label3.Location = new Point(38, 47);
+            label3.Name = "label3";
+            label3.Size = new Size(40, 38);
+            label3.TabIndex = 12;
+            label3.Text = "✘";
             // 
             // DivitionSetting
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(402, 453);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(UserDifinePanel);
             Controls.Add(JIPanel);
             Controls.Add(MeantonePanel);
@@ -386,12 +427,12 @@
             MeantonePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)MeantoneOnnsuuUpDown).EndInit();
             ((System.ComponentModel.ISupportInitialize)Meantone5thUpDown).EndInit();
-            JIPanel.ResumeLayout(false);
-            JIPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)JIonsuuUpDown).EndInit();
             UserDifinePanel.ResumeLayout(false);
             UserDifinePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)UserDifineUpDown).EndInit();
+            JIPanel.ResumeLayout(false);
+            JIPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)JIonsuuUpDown).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -427,5 +468,8 @@
         private Label UserDifineCents;
         private NumericUpDown UserDifineUpDown;
         private Label UserDifineOnnsuu;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

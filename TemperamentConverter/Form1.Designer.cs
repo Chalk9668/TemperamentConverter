@@ -33,7 +33,6 @@
             Reconvert = new Button();
             ApplyTuning = new Button();
             SaveTuning = new Button();
-            Notation = new Label();
             button1 = new Button();
             TuningText = new Label();
             BaseFreqText = new Label();
@@ -43,6 +42,9 @@
             SamplerSelect = new ComboBox();
             SamplerText = new Label();
             DoScale = new Button();
+            label3 = new Label();
+            label1 = new Label();
+            Notation = new Label();
             SuspendLayout();
             // 
             // CancelButton
@@ -65,18 +67,13 @@
             resources.ApplyResources(ApplyTuning, "ApplyTuning");
             ApplyTuning.Name = "ApplyTuning";
             ApplyTuning.UseVisualStyleBackColor = true;
+            ApplyTuning.Click += ApplyTuning_Click;
             // 
             // SaveTuning
             // 
             resources.ApplyResources(SaveTuning, "SaveTuning");
             SaveTuning.Name = "SaveTuning";
             SaveTuning.UseVisualStyleBackColor = true;
-            // 
-            // Notation
-            // 
-            resources.ApplyResources(Notation, "Notation");
-            Notation.Name = "Notation";
-            Notation.Click += Notation_Click;
             // 
             // button1
             // 
@@ -135,10 +132,28 @@
             DoScale.UseVisualStyleBackColor = true;
             DoScale.Click += button2_Click;
             // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
+            // 
+            // Notation
+            // 
+            resources.ApplyResources(Notation, "Notation");
+            Notation.Name = "Notation";
+            Notation.Click += Notation_Click;
+            // 
             // Setting
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label1);
+            Controls.Add(label3);
             Controls.Add(DoScale);
             Controls.Add(SamplerText);
             Controls.Add(SamplerSelect);
@@ -167,7 +182,6 @@
         private Button Reconvert;
         private Button ApplyTuning;
         private Button SaveTuning;
-        private Label Notation;
         private Button button1;
         private Label TuningText;
         private Label BaseFreqText;
@@ -177,5 +191,8 @@
         private ComboBox SamplerSelect;
         private Label SamplerText;
         private Button DoScale;
+        private Label label3;
+        private Label label1;
+        private Label Notation;
     }
 }

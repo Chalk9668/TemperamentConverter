@@ -167,5 +167,20 @@ namespace TemperamentConverter
         {
 
         }
+
+        private void ApplyTuning_Click(object sender, EventArgs e) // 調律を適用ScaleMapper.Mapの処理で適用。
+        {
+            try
+            {
+                ScaleMapper.UserDifineScaleMap();
+                UstWriter.Write(Environment.GetCommandLineArgs()[1]);
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("エラーが発生しました:\n" + ex.Message, "エラー",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
