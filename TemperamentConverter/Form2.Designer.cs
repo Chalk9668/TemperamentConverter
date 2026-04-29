@@ -154,11 +154,12 @@
             // IndicateEDO1step
             // 
             IndicateEDO1step.AutoSize = true;
-            IndicateEDO1step.Location = new Point(32, 71);
+            IndicateEDO1step.Font = new Font("Segoe UI", 16F);
+            IndicateEDO1step.Location = new Point(77, 72);
             IndicateEDO1step.Name = "IndicateEDO1step";
-            IndicateEDO1step.Size = new Size(59, 25);
+            IndicateEDO1step.Size = new Size(89, 37);
             IndicateEDO1step.TabIndex = 3;
-            IndicateEDO1step.Text = "label1";
+            IndicateEDO1step.Text = "n cent";
             IndicateEDO1step.Click += IndicateEDO1step_Click;
             // 
             // EDODirection

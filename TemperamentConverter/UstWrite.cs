@@ -1,12 +1,12 @@
 ﻿using System;
 using System.IO;
-using System.Text;
+using System.Text;  // こいつはShift_JISでファイルを読み書きするために必要らしい（へぇ～）。
 using System.Linq;
 using System.Collections.Generic;
 
 public static class UstWriter
 {
-    public static void Write(string ustPath)
+    public static void Write(string ustPath) // 一時ファイルの処理はほぼコピペなので最初に読んだUTAUプラグインの記事を見ると良い。
     {
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
@@ -27,9 +27,7 @@ public static class UstWriter
         {
             string line = lines[i];
 
-            //--------------------------------
-            // ノート開始判定
-            //--------------------------------
+            // ノート開始判定。詳しくはForm1のコード参照。
 
             if (line.StartsWith("[#") && line.EndsWith("]"))
             {
@@ -40,14 +38,16 @@ public static class UstWriter
                     currentNoteNum >= 0)
                 {
                     int pitchIndex =
-                        currentNoteNum % division;
+                        currentNoteNum % 12; // 12で割った余りがピッチクラス（C, C#, D, ..., B）に対応する。
+
+                    ScaleMapper.UserDifineScaleMap();
 
                     double cent =
                         TuningConfig.MappedCents[pitchIndex];
 
                     int tValue =
                         (int)Math.Round(
-                            cent - pitchIndex * 100
+                            cent - pitchIndex * 100 // ピッチクラスの基準からのセント差をt値として計算
                         );
 
                     lines.Insert(
@@ -58,7 +58,6 @@ public static class UstWriter
                     i++; // 行追加分ずらす
                 }
 
-                //--------------------------------
 
                 if (line == "[#PREV]" ||
                     line == "[#NEXT]" ||
@@ -78,9 +77,7 @@ public static class UstWriter
                 continue;
             }
 
-            //--------------------------------
-            // ノート内部処理
-            //--------------------------------
+            // 一時ファイルの解析。
 
             if (!inNote)
                 continue;
@@ -103,14 +100,14 @@ public static class UstWriter
                 if (currentNoteNum >= 0)
                 {
                     int pitchIndex =
-                        currentNoteNum % division;
+                        currentNoteNum % 12; // 12で割った余りがピッチクラス（C, C#, D, ..., B）に対応する。
 
                     double cent =
                         TuningConfig.MappedCents[pitchIndex];
 
                     int tValue =
                         (int)Math.Round(
-                            cent - pitchIndex * 100
+                            cent - pitchIndex * 100 // ピッチクラスの基準からのセント差をt値として計算
                         );
 
                     string flagsValue =
@@ -123,10 +120,6 @@ public static class UstWriter
             }
         }
 
-        //--------------------------------
-        // 保存（重要）
-        //--------------------------------
-
         File.WriteAllLines(
             ustPath,
             lines,
@@ -134,10 +127,7 @@ public static class UstWriter
         );
     }
 
-    //--------------------------------
-    // tフラグ置換処理
-    //--------------------------------
-
+    // Flags文字列にtフラグを追加・更新する。
     private static string SetTFlag(
         string flags,
         int tValue
@@ -151,10 +141,7 @@ public static class UstWriter
         // tフラグ削除
         var parts =
             flags
-            .Split(new char[] { ' ' },
-                StringSplitOptions.RemoveEmptyEntries)
-            .Where(p => !p.StartsWith("t"))
-            .ToList();
+            .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries) .Where(p => !p.StartsWith("t")) .ToList();
 
         // 新しいt追加
         parts.Add($"t{tValue}");

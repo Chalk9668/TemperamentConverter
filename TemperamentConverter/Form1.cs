@@ -168,18 +168,33 @@ namespace TemperamentConverter
 
         }
 
-        private void ApplyTuning_Click(object sender, EventArgs e) // 調律を適用ScaleMapper.Mapの処理で適用。
+        private void ApplyTuning_Click(
+            object sender,
+            EventArgs e)
         {
-            try
+            try // 再帰じゃなくて一方向性の処理であることを覚えておけ。
             {
+                Tuning.EDO(
+                    TuningConfig.Division
+                );
+
                 ScaleMapper.UserDifineScaleMap();
-                UstWriter.Write(Environment.GetCommandLineArgs()[1]);
+
+                UstWriter.Write(
+                    Environment
+                    .GetCommandLineArgs()[1]
+                );
+
                 Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("エラーが発生しました:\n" + ex.Message, "エラー",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(
+                    ex.Message,
+                    "エラーが発生しました",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
         }
     }

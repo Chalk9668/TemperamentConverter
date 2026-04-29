@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace TemperamentConverter
 {
     public partial class DivitionSetting : Form
@@ -56,10 +57,19 @@ namespace TemperamentConverter
         {
             //けしちゃだめ
         }
-
-        private void TuningSetting_Load(object sender, EventArgs e)
+        private void TuningSetting_Load(
+            object sender,
+            EventArgs e)
         {
-            //けしちゃだめ
+            int n = (int)nEDOselect.Value; // ここでnEDOselectの値を取得して、1ステップあたりの大きさを計算の最初。
+            double step = 1200.0 / n; // 1ステップあたりの大きさを計算。
+            IndicateEDO1step.Text = $"{step:F3} cent";　// ここで計算結果をボタンの表面に表示するのも最初。
+
+            if (TuningConfig.Division > 0)
+            {
+                nEDOselect.Value =
+                    TuningConfig.Division;
+            } //　TuningTypeに応じてやるようにはするが分岐処理は後回し。
         }
 
         private void WholeRadioButton_CheckedChanged(object sender, EventArgs e)　//　パネル切り替えをする。
@@ -120,7 +130,7 @@ namespace TemperamentConverter
 
             // 3. 表示用のボタン (IndicateEDO1step) の文字を直接更新。
             // ここで計算結果をボタンの表面に表示する。
-            IndicateEDO1step.Text = $"{step:F2} ¢";
+            IndicateEDO1step.Text = $"{step:F3} cent";
         }
     }
 }
