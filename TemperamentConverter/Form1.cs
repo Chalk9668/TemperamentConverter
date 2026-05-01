@@ -179,9 +179,20 @@ namespace TemperamentConverter
                 switch (TuningConfig.Type)
                 {
                     case TuningType.nEDO:
-                        Tuning.EDO(TuningConfig.Division);//Tuningから平均律呼び出し。
-                        ScaleMapper.UserDifineScaleMap();// ユーザ定義のみになってるんでどっかで最適化せねば。
-                        UstWriter.Write(Environment.GetCommandLineArgs()[1]);// ustファイルへの書き込み。
+                        MessageBox.Show(
+                            string.Join("\n", TuningConfig.MappedCents.Select((c, i) => $"{i}: {c:F2}¢"))
+                        );
+                        Tuning.EDO(TuningConfig.Division);
+                        ScaleMapper.UserDifineScaleMap();
+                        MessageBox.Show(
+                            $"Division: {TuningConfig.Division}\n" +
+                            $"RelativeStep: {TuningConfig.RelativeStep}\n" +
+                            $"ScaleSteps: {string.Join(",", TuningConfig.ScaleSteps)}\n\n" +
+                            string.Join("\n", TuningConfig.MappedCents.Select((c, i) => $"{i}: {c:F2}¢"))
+                        );
+                        UstWriter.Write(Environment.GetCommandLineArgs()[1]);
+                        MessageBox.Show("調律変換が完了しました。", "Success",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Close();
                         break;
                         //　nEDOケース

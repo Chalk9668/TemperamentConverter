@@ -96,8 +96,6 @@ namespace TemperamentConverter
                         return;
                     }
 
-                    //--------------------------------
-
                     TuningConfig.ScaleSteps =
                         steps.Select(s => s.Value).ToArray();
 
