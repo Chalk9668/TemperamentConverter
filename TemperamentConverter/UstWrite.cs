@@ -1,4 +1,6 @@
-﻿using System;
+﻿// FileAnme: UstWrite.cs
+
+using System;
 using System.IO;
 using System.Text;  // こいつはShift_JISでファイルを読み書きするために必要らしい（へぇ～）。
 using System.Linq;
@@ -47,7 +49,7 @@ public static class UstWriter
 
                     int tValue =
                         (int)Math.Round(
-                            cent - pitchIndex * 100 // ピッチクラスの基準からのセント差をt値として計算
+                            TuningConfig.MappedCents[pitchIndex]
                         );
 
                     lines.Insert(
@@ -107,7 +109,7 @@ public static class UstWriter
 
                     int tValue =
                         (int)Math.Round(
-                            cent - pitchIndex * 100 // ピッチクラスの基準からのセント差をt値として計算
+                            TuningConfig.MappedCents[pitchIndex]
                         );
 
                     string flagsValue =

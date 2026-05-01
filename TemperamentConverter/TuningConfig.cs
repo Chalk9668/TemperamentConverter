@@ -1,8 +1,10 @@
-﻿using System;
+﻿// FileName : TuningConfig.cs
+
+using System;
 
 public static class TuningConfig
 {
-    public static TuningType Type { get; set; }
+    public static TuningType Type { get; set; } // どの音律を選択しているか。これもForm2のラジオボタンで選択するやつ。これもTuningTypeに応じて分岐処理するためのもの。
     public static int Division { get; set; }
     public static List<double> TuningCents { get; set; } = new List<double>();
     public static int[] ScaleSteps { get; set; } = new int[12];
