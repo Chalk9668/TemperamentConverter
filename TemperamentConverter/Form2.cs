@@ -97,18 +97,22 @@ namespace TemperamentConverter
             if (nEDORadio.Checked)
             {
                 TuningConfig.Division = (int)nEDOselect.Value;
+                TuningConfig.Type = TuningType.nEDO;
             }
             else if (JIRadio.Checked)
             {
+                TuningConfig.Type = TuningType.JI;
                // ApplyJI();
             }
             else if (MeantoneRadio.Checked)
             {
-               // ApplyMeantone();
+                TuningConfig.Type = TuningType.Meantone;
+                // ApplyMeantone();
             }
             else if (UserDifineRadio.Checked)
             {
-               // ApplyUserDefined();
+                TuningConfig.Type = TuningType.UserDefined;
+                // ApplyUserDefined();
             }
 
 

@@ -4,16 +4,16 @@ using System;
 
 public static class TuningConfig
 {
-    public static TuningType Type { get; set; } // どの音律を選択しているか。これもForm2のラジオボタンで選択するやつ。これもTuningTypeに応じて分岐処理するためのもの。
+    public static TuningType Type { get; set; } // どの音律を選択しているか。Form2のラジオボタンで選択する。
     public static int Division { get; set; }
     public static List<double> TuningCents { get; set; } = new List<double>();
     public static int[] ScaleSteps { get; set; } = new int[12];
     public static double[] MappedCents { get; set; } = new double[12];
 
-    public static int RelativeStep { get; set; } = 0;
+    public static int RelativeStep { get; set; } = 0;　// ユーザ定義音階の相対ステップ。Form3のUpDownで指定する。
 }
 
-public enum TuningType { nEDO, Meantone, JustIntonation, UserDefined }
+public enum TuningType { nEDO, Meantone, JI, UserDefined } // Typeの列挙型宣言。
 
 // 日記
 // 2026-04-25

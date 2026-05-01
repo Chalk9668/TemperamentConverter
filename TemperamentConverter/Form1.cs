@@ -176,18 +176,21 @@ namespace TemperamentConverter
         {
             try // 再帰じゃなくて一方向性の処理であることを覚えておけ。
             {
-                Tuning.EDO(
-                    TuningConfig.Division
-                );
+                switch (TuningConfig.Type)
+                {
+                    case TuningType.nEDO:
+                        Tuning.EDO(TuningConfig.Division);//Tuningから平均律呼び出し。
+                        ScaleMapper.UserDifineScaleMap();// ユーザ定義のみになってるんでどっかで最適化せねば。
+                        UstWriter.Write(Environment.GetCommandLineArgs()[1]);// ustファイルへの書き込み。
+                        Close();
+                        break;
+                        //　nEDOケース
 
-                ScaleMapper.UserDifineScaleMap();
-
-                UstWriter.Write(
-                    Environment
-                    .GetCommandLineArgs()[1]
-                );
-
-                Close();
+                    case TuningType.JI:
+                        Close();
+                        // JIの処理は未実装（てか平均律以外全部未実装）。
+                        break;
+                }
             }
             catch (Exception ex)
             {
