@@ -1,6 +1,7 @@
 ﻿// FileName: ScaleMapper.cs
 
 using System;
+using System.Diagnostics;
 
 public static class ScaleMapper
 {
@@ -9,30 +10,35 @@ public static class ScaleMapper
         int division = TuningConfig.Division;
         double stepSize = 1200.0 / division;
 
-        // RelativeStep適用後のScaleStepsを計算
-        int[] shiftedSteps = new int[12];
+        // RelativeStep適用後、0〜division-1に正規化
+        int[] shiftedSteps = TuningConfig.ScaleSteps
+            .Select(s => ((s + TuningConfig.RelativeStep) % division + division) % division)
+            .ToArray();
+
+        // -division/2〜+division/2に正規化
+        int[] normalizedSteps = shiftedSteps
+            .Select(s => s > division / 2 ? s - division : s)
+            .ToArray();
+
+        // 0に最も近いstepのindexを探す（同距離なら正を優先）
+        int originIndex = 0;
+        int minDist = int.MaxValue;
         for (int i = 0; i < 12; i++)
         {
-            int step = (TuningConfig.ScaleSteps[i] + TuningConfig.RelativeStep) % division;
-            if (step < 0) step += division;
-            shiftedSteps[i] = step;
+            int dist = Math.Abs(normalizedSteps[i]);
+            if (dist < minDist || (dist == minDist && normalizedSteps[i] > 0))
+            {
+                minDist = dist;
+                originIndex = i;
+            }
         }
 
-        // Cに対応するステップのセント値を基準にする
-        double baseCent = shiftedSteps[0] * stepSize;
-
+        // originIndexをCとして順番に割り当て
         for (int i = 0; i < 12; i++)
         {
-            double cent = shiftedSteps[i] * stepSize - baseCent;
+            int idx = (originIndex + i) % 12;
+            double cent = normalizedSteps[idx] * stepSize - i * 100.0;
 
-            // 0〜1200¢に正規化
-            while (cent < 0.0) cent += 1200.0;
-            while (cent >= 1200.0) cent -= 1200.0;
-
-            // 12EDOの各音（100¢刻み）との差分に変換
-            cent = cent - i * 100.0;
-
-            // -600〜+600¢に収める
             while (cent > 600.0) cent -= 1200.0;
             while (cent < -600.0) cent += 1200.0;
 

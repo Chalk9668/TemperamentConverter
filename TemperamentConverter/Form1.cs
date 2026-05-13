@@ -184,18 +184,10 @@ namespace TemperamentConverter
                         );
                         Tuning.EDO(TuningConfig.Division);
                         ScaleMapper.UserDifineScaleMap();
-                        MessageBox.Show(
-                            $"Division: {TuningConfig.Division}\n" +
-                            $"RelativeStep: {TuningConfig.RelativeStep}\n" +
-                            $"ScaleSteps: {string.Join(",", TuningConfig.ScaleSteps)}\n\n" +
-                            string.Join("\n", TuningConfig.MappedCents.Select((c, i) => $"{i}: {c:F2}¢"))
-                        );
                         UstWriter.Write(Environment.GetCommandLineArgs()[1]);
-                        MessageBox.Show("調律変換が完了しました。", "Success",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Close();
                         break;
-                        //　nEDOケース
+                    //　nEDOケース
 
                     case TuningType.JI:
                         Close();
@@ -211,6 +203,36 @@ namespace TemperamentConverter
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error
                 );
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            // けしちゃだめ
+        }
+
+        private void comboBox1_SelectedIndexChanged(
+            object sender,
+            EventArgs e)
+        {
+            string selectedItem = LanguageSettingComboBox.SelectedItem?.ToString() ?? "";
+
+            LanguageSetting languageSetting =
+                new LanguageSetting();
+
+            switch (selectedItem)
+            {
+                case "日本語":
+                    languageSetting.ChangeLanguage(
+                        this,
+                        "ja-JP");
+                    break;
+
+                case "English":
+                    languageSetting.ChangeLanguage(
+                        this,
+                        "en-US");
+                    break;
             }
         }
     }
