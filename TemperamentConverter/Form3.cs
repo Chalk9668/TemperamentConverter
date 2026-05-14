@@ -61,7 +61,7 @@ namespace TemperamentConverter
                     var steps =
                         UserDifineScale.Text  // ユーザ定義音階のテキストをカンマで分割して数値に変換。
                         .Split(',')
-                        .Select(s =>　int.TryParse(s.Trim(),out int v) ? v : (int?)null) .ToArray();
+                        .Select(s => int.TryParse(s.Trim(), out int v) ? v : (int?)null).ToArray();
                     //--------------------------------
                     // 数値チェック
                     //--------------------------------
@@ -123,6 +123,11 @@ namespace TemperamentConverter
         }
 
         private void MosButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserDifineScaleRabel_Click(object sender, EventArgs e)
         {
 
         }

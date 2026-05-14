@@ -1,5 +1,6 @@
 // FileName: Form1.cs
 
+using System.Globalization;
 using System.Text;
 using static System.Windows.Forms.DataFormats;
 
@@ -133,7 +134,8 @@ namespace TemperamentConverter
 
         private void Setting_Load(object sender, EventArgs e)
         {
-
+            LanguageSetting languageSetting = new LanguageSetting();
+            languageSetting.ChangeLanguage(this, "");
         }
 
         private void TuningText_Click(object sender, EventArgs e)
@@ -211,29 +213,33 @@ namespace TemperamentConverter
             // けしちゃだめ
         }
 
-        private void comboBox1_SelectedIndexChanged(
-            object sender,
-            EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedItem = LanguageSettingComboBox.SelectedItem?.ToString() ?? "";
 
-            LanguageSetting languageSetting =
-                new LanguageSetting();
-
+            string cultureName;
             switch (selectedItem)
             {
-                case "日本語":
-                    languageSetting.ChangeLanguage(
-                        this,
-                        "ja-JP");
+                case "Japanese(日本語)":
+                    cultureName = "ja";
                     break;
-
-                case "English":
-                    languageSetting.ChangeLanguage(
-                        this,
-                        "en-US");
+                case "English(English)":
+                    cultureName = "en";
+                    break;
+                default:
+                    cultureName = "";
                     break;
             }
+
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultureName);
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(cultureName);
+
+            // comboBox1.Text = $"{Thread.CurrentThread.CurrentUICulture.Name}";
+            //　治らんので後で直す。動作はするがUIが悪い。
+
+            // コントロールを全部破棄して再生成
+            this.Controls.Clear();
+            this.InitializeComponent();
         }
     }
 }

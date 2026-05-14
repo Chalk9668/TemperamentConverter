@@ -105,6 +105,7 @@
             // 
             resources.ApplyResources(UserDifineScaleRabel, "UserDifineScaleRabel");
             UserDifineScaleRabel.Name = "UserDifineScaleRabel";
+            UserDifineScaleRabel.Click += UserDifineScaleRabel_Click;
             // 
             // UserDifineScaleButton
             // 

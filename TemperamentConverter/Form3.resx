@@ -117,360 +117,246 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="UserDifineScaleButton.Text" xml:space="preserve">
-    <value>ユーザ定義音階 + 相対ステップ</value>
-  </data>
-  <data name="MosButton.Text" xml:space="preserve">
-    <value>MOSスケール</value>
-  </data>
-  <data name="&gt;&gt;ScaleClose.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MosButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="UserDifineDirection.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
-  </data>
-  <data name="&gt;&gt;ScaleClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;UserDifineDirection.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>相対ステップ</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="ScaleApply.Text" xml:space="preserve">
-    <value>適用</value>
-  </data>
-  <data name="ScaleApply.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>✘</value>
-  </data>
-  <data name="UserDifineScaleRabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 21</value>
-  </data>
-  <data name="&gt;&gt;MosButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UserDifineDirection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 170</value>
-  </data>
-  <data name="&gt;&gt;MosButton.Name" xml:space="preserve">
-    <value>MosButton</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UserDifineScale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 31</value>
-  </data>
-  <data name="&gt;&gt;UserDifineDirection.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScaleRabel.Name" xml:space="preserve">
-    <value>UserDifineScaleRabel</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;RandomButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ScaleClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 412</value>
-  </data>
-  <data name="&gt;&gt;ScaleClose.Name" xml:space="preserve">
-    <value>ScaleClose</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="UserDifinePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 94</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScaleButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScale.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScaleRabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UserDifineUpDown.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;UserDifineScaleRabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="RandomButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ScaleApply.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 29</value>
-  </data>
-  <data name="UserDifineScaleRabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 25</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScale.Parent" xml:space="preserve">
+  <data name="&gt;&gt;UserDifineDirection.Parent" xml:space="preserve">
     <value>UserDifinePanel</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 25</value>
-  </data>
-  <data name="UserDifineScaleButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 29</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 38</value>
-  </data>
-  <data name="ScaleClose.Text" xml:space="preserve">
-    <value>閉じる</value>
-  </data>
-  <data name="ScaleClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 29</value>
-  </data>
-  <data name="&gt;&gt;UserDifineUpDown.Parent" xml:space="preserve">
-    <value>UserDifinePanel</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>✘</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 100</value>
-  </data>
-  <data name="&gt;&gt;MosButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ScaleApply.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScaleRabel.Parent" xml:space="preserve">
-    <value>UserDifinePanel</value>
-  </data>
-  <data name="RandomButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 47</value>
-  </data>
-  <data name="UserDifineScaleButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 12</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 47</value>
-  </data>
-  <data name="&gt;&gt;MosButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UserDifineDirection.Name" xml:space="preserve">
-    <value>UserDifineDirection</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScaleButton.Name" xml:space="preserve">
-    <value>UserDifineScaleButton</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>402, 453</value>
-  </data>
-  <data name="MosButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 47</value>
-  </data>
-  <data name="&gt;&gt;UserDifinePanel.Name" xml:space="preserve">
-    <value>UserDifinePanel</value>
-  </data>
-  <data name="&gt;&gt;UserDifinePanel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="UserDifineDirection.Text" xml:space="preserve">
     <value>カンマで区切って、生成した音律の各stepをUTAUの12音に当て嵌めます。[1,5,10...28]みたいな感じです。
 
 相対ステップにより、最初に設定したステップの最初からその音階内で幾tsstep上下するかを指定できます。</value>
   </data>
-  <data name="UserDifinePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="MosButton.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="RandomButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 29</value>
   </data>
-  <data name="&gt;&gt;UserDifineScaleButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="UserDifineUpDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 31</value>
+  <data name="MosButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 47</value>
   </data>
-  <data name="&gt;&gt;ScaleApply.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>音階設定</value>
   </data>
-  <data name="&gt;&gt;UserDifinePanel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;UserDifineScale.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
   </data>
-  <data name="UserDifineScaleRabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>402, 453</value>
   </data>
-  <data name="RandomButton.Text" xml:space="preserve">
-    <value>ランダム</value>
+  <data name="&gt;&gt;UserDifineDirection.Name" xml:space="preserve">
+    <value>UserDifineDirection</value>
   </data>
-  <data name="ScaleClose.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 38</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>ユーザ定義音階</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 38</value>
-  </data>
-  <data name="UserDifineScaleRabel.Text" xml:space="preserve">
-    <value>ユーザ定義音階 + 相対ステップ</value>
-  </data>
-  <data name="UserDifineUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 66</value>
+  <data name="ScaleClose.Text" xml:space="preserve">
+    <value>閉じる</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 68</value>
   </data>
-  <data name="&gt;&gt;UserDifineScaleRabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;RandomButton.Name" xml:space="preserve">
-    <value>RandomButton</value>
-  </data>
-  <data name="&gt;&gt;UserDifineUpDown.Name" xml:space="preserve">
-    <value>UserDifineUpDown</value>
-  </data>
-  <data name="&gt;&gt;RandomButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="RandomButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 47</value>
   </data>
-  <data name="ScaleApply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 412</value>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="UserDifineDirection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 123</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="UserDifineScaleRabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UserDifineScaleButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 29</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 25</value>
+  </data>
+  <data name="&gt;&gt;MosButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 25</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 25</value>
+  </data>
+  <data name="&gt;&gt;RandomButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ScaleClose.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="UserDifineScaleRabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 21</value>
+  </data>
+  <data name="ScaleApply.Text" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>ユーザ定義音階</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScale.Name" xml:space="preserve">
+    <value>UserDifineScale</value>
+  </data>
+  <data name="UserDifineScaleRabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 25</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="ScaleClose.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScale.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScaleRabel.Name" xml:space="preserve">
+    <value>UserDifineScaleRabel</value>
+  </data>
+  <data name="UserDifineUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 31</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 38</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="UserDifineScaleButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;ScaleClose.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="UserDifineDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 170</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RandomButton.Name" xml:space="preserve">
+    <value>RandomButton</value>
+  </data>
+  <data name="MosButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UserDifineUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 66</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;UserDifineDirection.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScaleButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="UserDifinePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 94</value>
+  </data>
+  <data name="UserDifineDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 123</value>
+  </data>
+  <data name="UserDifinePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 297</value>
+  </data>
+  <data name="MosButton.Text" xml:space="preserve">
+    <value>MOSスケール</value>
+  </data>
+  <data name="UserDifineUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16.8pt</value>
+  </data>
+  <data name="ScaleApply.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="UserDifineScaleButton.Text" xml:space="preserve">
+    <value>ユーザ定義音階 + 相対ステップ</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="UserDifineDirection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScaleRabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 38</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MosButton.Name" xml:space="preserve">
+    <value>MosButton</value>
+  </data>
+  <data name="&gt;&gt;UserDifineUpDown.Name" xml:space="preserve">
+    <value>UserDifineUpDown</value>
+  </data>
+  <data name="&gt;&gt;ScaleApply.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MosButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 29</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ScaleSetting</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ScaleClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="ScaleApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="UserDifineScale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 31</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScaleButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;UserDifineUpDown.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;UserDifinePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UserDifineScaleButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="UserDifineScale.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="UserDifinePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 297</value>
-  </data>
-  <data name="&gt;&gt;ScaleApply.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="ScaleClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 412</value>
   </data>
   <data name="&gt;&gt;ScaleApply.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 25</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>UserDifinePanel</value>
-  </data>
-  <data name="UserDifineScaleRabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 25</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScale.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UserDifineUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UserDifineScaleButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>音階設定</value>
-  </data>
-  <data name="RandomButton.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="MosButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 29</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>UserDifinePanel</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ScaleSetting</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 16.8pt</value>
-  </data>
-  <data name="UserDifineDirection.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="UserDifineScale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 128</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -478,28 +364,139 @@
   <data name="&gt;&gt;ScaleApply.Name" xml:space="preserve">
     <value>ScaleApply</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 16.8pt</value>
+  <data name="&gt;&gt;MosButton.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;UserDifineDirection.Parent" xml:space="preserve">
-    <value>UserDifinePanel</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="UserDifineScale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 128</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 38</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UserDifineScaleRabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePanel.Name" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;MosButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UserDifineScaleButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;ScaleClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>✘</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16.8pt</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;RandomButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UserDifineUpDown.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScaleButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RandomButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;ScaleClose.Name" xml:space="preserve">
+    <value>ScaleClose</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 47</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>✘</value>
+  </data>
+  <data name="ScaleApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 412</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MosButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScaleRabel.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="RandomButton.Text" xml:space="preserve">
+    <value>ランダム</value>
+  </data>
+  <data name="&gt;&gt;UserDifineUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UserDifineScale.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 100</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="RandomButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
   <data name="&gt;&gt;RandomButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;UserDifineScale.Name" xml:space="preserve">
-    <value>UserDifineScale</value>
+  <data name="&gt;&gt;UserDifineDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;ScaleClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserDifineScaleButton.Name" xml:space="preserve">
+    <value>UserDifineScaleButton</value>
+  </data>
+  <data name="UserDifineScaleRabel.Text" xml:space="preserve">
+    <value>ユーザ定義音階 + 相対ステップ</value>
+  </data>
+  <data name="UserDifinePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="UserDifineDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UserDifineScaleButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 12</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePanel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>en</value>
   </metadata>
 </root>

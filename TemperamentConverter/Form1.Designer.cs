@@ -44,7 +44,6 @@
             DoScale = new Button();
             label3 = new Label();
             label1 = new Label();
-            Notation = new Label();
             LanguageSettingComboBox = new ComboBox();
             LanguageSettingLabel = new Label();
             label2 = new Label();
@@ -148,12 +147,6 @@
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
             // 
-            // Notation
-            // 
-            resources.ApplyResources(Notation, "Notation");
-            Notation.Name = "Notation";
-            Notation.Click += Notation_Click;
-            // 
             // LanguageSettingComboBox
             // 
             LanguageSettingComboBox.FormattingEnabled = true;
@@ -209,7 +202,6 @@
             Controls.Add(BaseFreqText);
             Controls.Add(TuningText);
             Controls.Add(button1);
-            Controls.Add(Notation);
             Controls.Add(SaveTuning);
             Controls.Add(ApplyTuning);
             Controls.Add(Reconvert);
@@ -239,7 +231,6 @@
         private Button DoScale;
         private Label label3;
         private Label label1;
-        private Label Notation;
         private ComboBox LanguageSettingComboBox;
         private Label LanguageSettingLabel;
         private Label label2;
