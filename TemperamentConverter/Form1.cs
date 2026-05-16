@@ -23,7 +23,7 @@ namespace TemperamentConverter
         private void Reconvert_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-                "本当に続けますか？このまま実行すると設定した調律は失われます。",
+                "本当に続けますか？このまま実行すると設定した調律は失われます。\nDo you really want to continue? If you proceed, the configured temperament will be lost.",
                 "12EDOReconvertWarning",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question
@@ -31,7 +31,7 @@ namespace TemperamentConverter
 
             if (result == DialogResult.No)
             {
-                MessageBox.Show("変更を取りやめました。", "ReturnCancel",
+                MessageBox.Show("変更を取りやめました。\nCanceled modifying.", "ReturnCancel",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
@@ -101,7 +101,7 @@ namespace TemperamentConverter
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("エラーが発生しました:\n" + ex.Message, "エラー",
+                    MessageBox.Show("エラーが発生しました\nError occurred.:\n" + ex.Message, "エラー",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -136,6 +136,9 @@ namespace TemperamentConverter
         {
             LanguageSetting languageSetting = new LanguageSetting();
             languageSetting.ChangeLanguage(this, "");
+            MessageBox.Show("このソフトはまだ開発中です。バグがある可能性があります。\nThis software is still under development. There may be bugs.", "開発中",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private void TuningText_Click(object sender, EventArgs e)
@@ -191,7 +194,7 @@ namespace TemperamentConverter
                         break;
                     //　nEDOケース
 
-                    case TuningType.JI:
+                    case TuningType.JustIntonation:
                         Close();
                         // JIの処理は未実装（てか平均律以外全部未実装）。
                         break;
@@ -201,7 +204,7 @@ namespace TemperamentConverter
             {
                 MessageBox.Show(
                     ex.Message,
-                    "エラーが発生しました",
+                    "エラーが発生しました\nError occurred.",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error
                 );
@@ -221,7 +224,7 @@ namespace TemperamentConverter
             switch (selectedItem)
             {
                 case "Japanese(日本語)":
-                    cultureName = "ja";
+                    cultureName = "";
                     break;
                 case "English(English)":
                     cultureName = "en";
@@ -233,9 +236,6 @@ namespace TemperamentConverter
 
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultureName);
             Thread.CurrentThread.CurrentCulture = new CultureInfo(cultureName);
-
-            // comboBox1.Text = $"{Thread.CurrentThread.CurrentUICulture.Name}";
-            //　治らんので後で直す。動作はするがUIが悪い。
 
             // コントロールを全部破棄して再生成
             this.Controls.Clear();

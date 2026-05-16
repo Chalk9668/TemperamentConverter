@@ -120,11 +120,12 @@
             // 
             // EDOPanel
             // 
-            resources.ApplyResources(EDOPanel, "EDOPanel");
             EDOPanel.Controls.Add(EDODirection);
             EDOPanel.Controls.Add(IndicateEDO1step);
             EDOPanel.Controls.Add(nEDOselect);
             EDOPanel.Controls.Add(SayEDOn);
+            EDOPanel.Controls.Add(JIPanel);
+            resources.ApplyResources(EDOPanel, "EDOPanel");
             EDOPanel.Name = "EDOPanel";
             EDOPanel.Paint += EDOPanel_Paint;
             // 
@@ -156,12 +157,12 @@
             // 
             // MeantonePanel
             // 
-            resources.ApplyResources(MeantonePanel, "MeantonePanel");
             MeantonePanel.Controls.Add(MeantoneOnnsuuUpDown);
             MeantonePanel.Controls.Add(MeantoneOnsuu);
             MeantonePanel.Controls.Add(MeantoneDirection);
             MeantonePanel.Controls.Add(SizeOf5th);
             MeantonePanel.Controls.Add(Meantone5thUpDown);
+            resources.ApplyResources(MeantonePanel, "MeantonePanel");
             MeantonePanel.Name = "MeantonePanel";
             // 
             // MeantoneOnnsuuUpDown
@@ -190,9 +191,9 @@
             // 
             // Meantone5thUpDown
             // 
-            resources.ApplyResources(Meantone5thUpDown, "Meantone5thUpDown");
             Meantone5thUpDown.DecimalPlaces = 2;
             Meantone5thUpDown.Increment = new decimal(new int[] { 1, 0, 0, 131072 });
+            resources.ApplyResources(Meantone5thUpDown, "Meantone5thUpDown");
             Meantone5thUpDown.Maximum = new decimal(new int[] { 1200, 0, 0, 0 });
             Meantone5thUpDown.Minimum = new decimal(new int[] { 1200, 0, 0, int.MinValue });
             Meantone5thUpDown.Name = "Meantone5thUpDown";
@@ -200,12 +201,12 @@
             // 
             // UserDifinePanel
             // 
-            resources.ApplyResources(UserDifinePanel, "UserDifinePanel");
             UserDifinePanel.Controls.Add(UserDifineDirection);
             UserDifinePanel.Controls.Add(UserDifinePitches);
             UserDifinePanel.Controls.Add(UserDifineCents);
             UserDifinePanel.Controls.Add(UserDifineUpDown);
             UserDifinePanel.Controls.Add(UserDifineOnnsuu);
+            resources.ApplyResources(UserDifinePanel, "UserDifinePanel");
             UserDifinePanel.Name = "UserDifinePanel";
             // 
             // UserDifineDirection
@@ -240,12 +241,12 @@
             // 
             // JIPanel
             // 
-            resources.ApplyResources(JIPanel, "JIPanel");
             JIPanel.Controls.Add(JIDirection);
             JIPanel.Controls.Add(textBox1);
             JIPanel.Controls.Add(JIIndicate);
             JIPanel.Controls.Add(JIonsuuUpDown);
             JIPanel.Controls.Add(onnsuu);
+            resources.ApplyResources(JIPanel, "JIPanel");
             JIPanel.Name = "JIPanel";
             // 
             // JIDirection
@@ -299,7 +300,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(UserDifinePanel);
-            Controls.Add(JIPanel);
             Controls.Add(MeantonePanel);
             Controls.Add(EDOPanel);
             Controls.Add(UserDifineRadio);

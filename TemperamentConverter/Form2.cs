@@ -72,6 +72,28 @@ namespace TemperamentConverter
                 nEDOselect.Value =
                     TuningConfig.Division;
             } //　TuningTypeに応じてやるようにはするが分岐処理は後回し。
+              // TuningConfigから復元
+            if (TuningConfig.Division > 0)
+            {
+                nEDOselect.Value = TuningConfig.Division;
+            }
+
+            // ラジオボタンの選択を復元
+            switch (TuningConfig.Type)
+            {
+                case TuningType.nEDO:
+                    nEDORadio.Checked = true;
+                    break;
+                case TuningType.Meantone:
+                    MeantoneRadio.Checked = true;
+                    break;
+                case TuningType.JustIntonation:
+                    JIRadio.Checked = true;
+                    break;
+                case TuningType.UserDefined:
+                    UserDifineRadio.Checked = true;
+                    break;
+            }
         }
 
         private void WholeRadioButton_CheckedChanged(object sender, EventArgs e)　//　パネル切り替えをする。
@@ -101,7 +123,7 @@ namespace TemperamentConverter
             }
             else if (JIRadio.Checked)
             {
-                TuningConfig.Type = TuningType.JI;
+                TuningConfig.Type = TuningType.JustIntonation;
                // ApplyJI();
             }
             else if (MeantoneRadio.Checked)

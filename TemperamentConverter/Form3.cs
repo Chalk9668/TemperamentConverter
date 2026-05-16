@@ -26,17 +26,28 @@ namespace TemperamentConverter
             object sender,
             EventArgs e)
         {
+            // テキストフィールドの復元
             if (TuningConfig.ScaleSteps != null)
             {
                 UserDifineScale.Text =
-                    string.Join(
-                        ",",
-                        TuningConfig.ScaleSteps
-                    );
+                    string.Join(",", TuningConfig.ScaleSteps);
             }
 
-            UserDifineUpDown.Value =
-                TuningConfig.RelativeStep;  // 詳細はForm2のこれを参照せよ。
+            // ラジオボタンの復元
+            switch (TuningConfig.ScaleType)
+            {
+                case ScaleType.UserDefined:
+                    UserDifineScaleButton.Checked = true;
+                    break;
+                case ScaleType.MOS:
+                    MosButton.Checked = true;
+                    break;
+                case ScaleType.Random:
+                    RandomButton.Checked = true;
+                    break;
+            }
+
+            UserDifineUpDown.Value = TuningConfig.RelativeStep;  // 詳細はForm2のこれを参照せよ。
         }
 
         private void UserDifineUpDown_ValueChanged(object sender, EventArgs e)　// 相対ステップ。
@@ -49,71 +60,69 @@ namespace TemperamentConverter
             // ユーザ定義音階
         }
 
-        private void ScaleApply_Click(object sender, EventArgs e) // 適用してTunignCongifgをいじって終了。
+
+
+        private void ScaleApply_Click(object sender, EventArgs e)
         {
             try
             {
+                // ラジオボタンの選択をTuningConfigに保存
+                if (UserDifineScaleButton.Checked)
+                    TuningConfig.ScaleType = ScaleType.UserDefined;
+                else if (MosButton.Checked)
+                    TuningConfig.ScaleType = ScaleType.MOS;
+                else if (RandomButton.Checked)
+                    TuningConfig.ScaleType = ScaleType.Random;
+
                 if (UserDifineScaleButton.Checked)
                 {
-                    int relativeStep =
-                        (int)UserDifineUpDown.Value;
+                    // 既存のバリデーションと保存処理
+                    int relativeStep = (int)UserDifineUpDown.Value;
 
-                    var steps =
-                        UserDifineScale.Text  // ユーザ定義音階のテキストをカンマで分割して数値に変換。
+                    var steps = UserDifineScale.Text
                         .Split(',')
-                        .Select(s => int.TryParse(s.Trim(), out int v) ? v : (int?)null).ToArray();
-                    //--------------------------------
-                    // 数値チェック
-                    //--------------------------------
+                        .Select(s => int.TryParse(s.Trim(), out int v) ? v : (int?)null)
+                        .ToArray();
 
-                    if (steps.Any(s => s == null)) // 下記以外のエラー。
+                    if (steps.Any(s => s == null))
                     {
                         MessageBox.Show(
-                            "数値が不正です。",
-                            "入力エラー"
+                            "数値が不正です。\nInvalid values entered.",
+                            "入力エラー\nInput Error"
                         );
                         return;
                     }
 
-                    if (steps.Length != 12)　//全音名を指定しなかったときのエラー。
+                    if (steps.Length != 12)
                     {
                         MessageBox.Show(
-                            "12個入力してください。",
-                            "入力エラー"
+                            "12個入力してください。\nPlease enter 12 values.",
+                            "入力エラー\nInput Error"
                         );
                         return;
                     }
 
-                    int division =
-                        TuningConfig.Division;
+                    int division = TuningConfig.Division;
 
-                    if (steps.Any(s => s.Value < 0 || s.Value >= division)) // ステップが0以上division未満だったときのエラー。
+                    if (steps.Any(s => s.Value < 0 || s.Value >= division))
                     {
                         MessageBox.Show(
-                            $"0〜{division - 1} の範囲で入力してください。",
-                            "入力エラー"
+                            $"0〜{division - 1} の範囲で入力してください。\nPlease enter values in the range 0〜{division - 1}.",
+                            "入力エラー/Input Error"
                         );
                         return;
                     }
 
-                    TuningConfig.ScaleSteps =
-                        steps.Select(s => s.Value).ToArray();
-
-                    TuningConfig.RelativeStep =
-                        relativeStep;
-
-                    this.DialogResult =
-                        DialogResult.OK;
+                    TuningConfig.ScaleSteps = steps.Select(s => s.Value).ToArray();
+                    TuningConfig.RelativeStep = relativeStep;
+                    this.DialogResult = DialogResult.OK;
                 }
 
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(
-                    ex.Message,
-                    "A SPECIFIC ERROR OCCURED!! Zannen!"
-                );
+                MessageBox.Show(ex.Message, "不明なエラー。\nUnknown error occurred.");
             }
         }
 
