@@ -14,6 +14,26 @@
 - .scl/.kbm や .tun 等の調律ファイルや調律情報をつかえるようにしたい
 - おリッチなUIに
 
+### 機能
+
+現在利用可能な機能:
+
+- 任意のEDOへの変換
+- ユーザー定義スケール
+- Relative Step機能（トランスポーズのようなもの）
+- 12EDOへリセット
+
+実装予定の機能:
+
+- 純正律対応
+- ミーントーン対応
+- ランダムスケール生成
+- リッチUI
+- 简体中文
+- 繁體中文
+- 한국어
+- Deutsch
+
 ### 注意:
 
 - これは正式リリースではありません
@@ -25,11 +45,33 @@
 
 This is TemperamentConverter. You can modify UTAU microtonally with the 't' flag. It can be used with Moresampler. I'm a Moresampler user.
 
+### Features
+
+Currently available features:
+
+- Convert tuning to any EDO
+- User-defined scales
+- Relative step shifting (similar to transpose)
+- Reset tuning to 12EDO
+
+Planned features:
+
+- Just Intonation support
+- Meantone temperament support
+- Random scale generation
+- Rich UI
+- 简体中文
+- 繁體中文
+- 한국어
+- Deutsch
+
 ### WARNING
 
 - This is not a full release version.
 - It may cause errors, such as destroying UST files.
 - I will not be held responsible.
 - My microtonal techniques and knowledge are so-so.
+
+
 
 History:2026-04-06
