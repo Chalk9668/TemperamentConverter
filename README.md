@@ -43,7 +43,7 @@
 
 ## English
 
-This is TemperamentConverter. You can modify UTAU microtonally with the 't' flag. It can be used with Moresampler. I'm a Moresampler user.
+This is TemperamentConverter. You can modify UTAU microtonally with the `t` flag. It can be used with Moresampler. I'm a Moresampler user.
 
 ### Features
 
