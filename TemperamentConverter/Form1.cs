@@ -1,5 +1,6 @@
 // FileName: Form1.cs
 
+using System.Globalization;
 using System.Text;
 using static System.Windows.Forms.DataFormats;
 
@@ -22,7 +23,7 @@ namespace TemperamentConverter
         private void Reconvert_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-                "本当に続けますか？このまま実行すると設定した調律は失われます。",
+                "本当に続けますか？このまま実行すると設定した調律は失われます。\nDo you really want to continue? If you proceed, the configured temperament will be lost.",
                 "12EDOReconvertWarning",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question
@@ -30,7 +31,7 @@ namespace TemperamentConverter
 
             if (result == DialogResult.No)
             {
-                MessageBox.Show("変更を取りやめました。", "ReturnCancel",
+                MessageBox.Show("変更を取りやめました。\nCanceled modifying.", "ReturnCancel",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
@@ -100,7 +101,7 @@ namespace TemperamentConverter
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("エラーが発生しました:\n" + ex.Message, "エラー",
+                    MessageBox.Show("エラーが発生しました\nError occurred.:\n" + ex.Message, "エラー",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -133,6 +134,10 @@ namespace TemperamentConverter
 
         private void Setting_Load(object sender, EventArgs e)
         {
+            LanguageSetting languageSetting = new LanguageSetting();
+            languageSetting.ChangeLanguage(this, "");
+            MessageBox.Show("このソフトはまだ開発中です。バグがある可能性があります。\nThis software is still under development. There may be bugs.", "開発中",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
@@ -176,28 +181,65 @@ namespace TemperamentConverter
         {
             try // 再帰じゃなくて一方向性の処理であることを覚えておけ。
             {
-                Tuning.EDO(
-                    TuningConfig.Division
-                );
+                switch (TuningConfig.Type)
+                {
+                    case TuningType.nEDO:
+                        MessageBox.Show(
+                            string.Join("\n", TuningConfig.MappedCents.Select((c, i) => $"{i}: {c:F2}¢"))
+                        );
+                        Tuning.EDO(TuningConfig.Division);
+                        ScaleMapper.UserDifineScaleMap();
+                        UstWriter.Write(Environment.GetCommandLineArgs()[1]);
+                        Close();
+                        break;
+                    //　nEDOケース
 
-                ScaleMapper.UserDifineScaleMap();
-
-                UstWriter.Write(
-                    Environment
-                    .GetCommandLineArgs()[1]
-                );
-
-                Close();
+                    case TuningType.JustIntonation:
+                        Close();
+                        // JIの処理は未実装（てか平均律以外全部未実装）。
+                        break;
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(
                     ex.Message,
-                    "エラーが発生しました",
+                    "エラーが発生しました\nError occurred.",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error
                 );
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            // けしちゃだめ
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = LanguageSettingComboBox.SelectedItem?.ToString() ?? "";
+
+            string cultureName;
+            switch (selectedItem)
+            {
+                case "Japanese(日本語)":
+                    cultureName = "";
+                    break;
+                case "English(English)":
+                    cultureName = "en";
+                    break;
+                default:
+                    cultureName = "";
+                    break;
+            }
+
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultureName);
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(cultureName);
+
+            // コントロールを全部破棄して再生成
+            this.Controls.Clear();
+            this.InitializeComponent();
         }
     }
 }

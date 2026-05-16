@@ -44,7 +44,12 @@
             DoScale = new Button();
             label3 = new Label();
             label1 = new Label();
-            Notation = new Label();
+            LanguageSettingComboBox = new ComboBox();
+            LanguageSettingLabel = new Label();
+            label2 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // CancelButton
@@ -142,16 +147,50 @@
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
             // 
-            // Notation
+            // LanguageSettingComboBox
             // 
-            resources.ApplyResources(Notation, "Notation");
-            Notation.Name = "Notation";
-            Notation.Click += Notation_Click;
+            LanguageSettingComboBox.FormattingEnabled = true;
+            LanguageSettingComboBox.Items.AddRange(new object[] { resources.GetString("LanguageSettingComboBox.Items"), resources.GetString("LanguageSettingComboBox.Items1") });
+            resources.ApplyResources(LanguageSettingComboBox, "LanguageSettingComboBox");
+            LanguageSettingComboBox.Name = "LanguageSettingComboBox";
+            LanguageSettingComboBox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // LanguageSettingLabel
+            // 
+            resources.ApplyResources(LanguageSettingLabel, "LanguageSettingLabel");
+            LanguageSettingLabel.Name = "LanguageSettingLabel";
+            LanguageSettingLabel.Click += label2_Click;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
             // 
             // Setting
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label2);
+            Controls.Add(LanguageSettingLabel);
+            Controls.Add(LanguageSettingComboBox);
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(DoScale);
@@ -163,7 +202,6 @@
             Controls.Add(BaseFreqText);
             Controls.Add(TuningText);
             Controls.Add(button1);
-            Controls.Add(Notation);
             Controls.Add(SaveTuning);
             Controls.Add(ApplyTuning);
             Controls.Add(Reconvert);
@@ -193,6 +231,11 @@
         private Button DoScale;
         private Label label3;
         private Label label1;
-        private Label Notation;
+        private ComboBox LanguageSettingComboBox;
+        private Label LanguageSettingLabel;
+        private Label label2;
+        private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }

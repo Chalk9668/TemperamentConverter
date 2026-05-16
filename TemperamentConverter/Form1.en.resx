@@ -117,20 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CancelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>675, 389</value>
-  </data>
-  <data name="Reconvert.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.8pt, style=Bold</value>
-  </data>
-  <data name="Reconvert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 369</value>
-  </data>
-  <data name="Reconvert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 49</value>
+  <data name="CancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="Reconvert.Text" xml:space="preserve">
-    <value>12EDOに戻す</value>
+    <value>Reset tuning</value>
+  </data>
+  <data name="ApplyTuning.Text" xml:space="preserve">
+    <value>Apply tuning</value>
+  </data>
+  <data name="SaveTuning.Text" xml:space="preserve">
+    <value>Save tuning</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Load tuning</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TuningText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="TuningText.Text" xml:space="preserve">
+    <value>Division</value>
+  </data>
+  <data name="BaseFreqText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 25</value>
+  </data>
+  <data name="BaseFreqText.Text" xml:space="preserve">
+    <value>Base Freq</value>
+  </data>
+  <data name="ScaleText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 25</value>
+  </data>
+  <data name="ScaleText.Text" xml:space="preserve">
+    <value>Scale definition</value>
+  </data>
+  <data name="DoTuning.Text" xml:space="preserve">
+    <value>Open it</value>
+  </data>
+  <data name="SamplerText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 25</value>
+  </data>
+  <data name="SamplerText.Text" xml:space="preserve">
+    <value>Sampler</value>
+  </data>
+  <data name="DoScale.Text" xml:space="preserve">
+    <value>Open it</value>
+  </data>
+  <data name="LanguageSettingComboBox.Items1" xml:space="preserve">
+    <value>English(English)</value>
+  </data>
+  <data name="LanguageSettingComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 329</value>
+  </data>
+  <data name="LanguageSettingLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 276</value>
+  </data>
+  <data name="LanguageSettingLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 50</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>wip:TemperamentConverter</value>
   </data>
 </root>

@@ -1,19 +1,96 @@
-﻿// FileName : TuningConfig.cs
+﻿// FileName: TuningConfig.cs
 
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+
+public class TuningConfigData
+{
+    public TuningType Type { get; set; } = TuningType.nEDO; // Tuningの種類
+    public int Division { get; set; } = 12;
+    public List<double> TuningCents { get; set; } = new List<double>();
+    public int[] ScaleSteps { get; set; } = new int[12];
+    public double[] MappedCents { get; set; } = new double[12];
+    public int RelativeStep { get; set; } = 0;
+}
 
 public static class TuningConfig
 {
-    public static TuningType Type { get; set; } // どの音律を選択しているか。これもForm2のラジオボタンで選択するやつ。これもTuningTypeに応じて分岐処理するためのもの。
-    public static int Division { get; set; }
-    public static List<double> TuningCents { get; set; } = new List<double>();
-    public static int[] ScaleSteps { get; set; } = new int[12];
-    public static double[] MappedCents { get; set; } = new double[12];
+    // アプリ起動中の作業データ
+    private static TuningConfigData _data = new TuningConfigData();
 
-    public static int RelativeStep { get; set; } = 0;
+    // 各プロパティはDataに委譲
+    public static TuningType Type
+    {
+        get => _data.Type;
+        set => _data.Type = value;
+    }
+    public static int Division
+    {
+        get => _data.Division;
+        set => _data.Division = value;
+    }
+    public static List<double> TuningCents
+    {
+        get => _data.TuningCents;
+        set => _data.TuningCents = value;
+    }
+    public static int[] ScaleSteps
+    {
+        get => _data.ScaleSteps;
+        set => _data.ScaleSteps = value;
+    }
+    public static double[] MappedCents
+    {
+        get => _data.MappedCents;
+        set => _data.MappedCents = value;
+    }
+    public static int RelativeStep
+    {
+        get => _data.RelativeStep;
+        set => _data.RelativeStep = value;
+    }
+
+    // JSON保存
+    public static void SaveToJson(string path)
+    {
+        string json = JsonSerializer.Serialize(
+            _data,
+            new JsonSerializerOptions { WriteIndented = true }
+        );
+        File.WriteAllText(path, json);
+    }
+
+    // JSON読み込み
+    public static void LoadFromJson(string path)
+    {
+        string json = File.ReadAllText(path);
+        _data = JsonSerializer.Deserialize<TuningConfigData>(json)
+            ?? new TuningConfigData();
+    }
+
+    public class TuningConfigData
+    {
+        public TuningType Type { get; set; } = TuningType.nEDO;
+        public int Division { get; set; } = 12;
+        public List<double> TuningCents { get; set; } = new List<double>();
+        public int[] ScaleSteps { get; set; } = new int[12];
+        public double[] MappedCents { get; set; } = new double[12];
+        public int RelativeStep { get; set; } = 0;
+        public ScaleType ScaleType { get; set; } = ScaleType.UserDefined; // 追加
+    }
+
+    // TuningConfigにプロパティを追加
+    public static ScaleType ScaleType
+    {
+        get => _data.ScaleType;
+        set => _data.ScaleType = value;
+    }
 }
 
 public enum TuningType { nEDO, Meantone, JustIntonation, UserDefined }
+public enum ScaleType { UserDefined, MOS, Random }
 
 // 日記
 // 2026-04-25

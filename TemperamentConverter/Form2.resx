@@ -117,4 +117,834 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TuningClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 409</value>
+  </data>
+  <data name="TuningClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TuningClose.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TuningClose.Text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="&gt;&gt;TuningClose.Name" xml:space="preserve">
+    <value>TuningClose</value>
+  </data>
+  <data name="&gt;&gt;TuningClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TuningClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TuningClose.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="TuningApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 409</value>
+  </data>
+  <data name="TuningApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="TuningApply.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TuningApply.Text" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="&gt;&gt;TuningApply.Name" xml:space="preserve">
+    <value>TuningApply</value>
+  </data>
+  <data name="&gt;&gt;TuningApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TuningApply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TuningApply.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="nEDORadio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nEDORadio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="nEDORadio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="nEDORadio.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="nEDORadio.Text" xml:space="preserve">
+    <value>n平均律</value>
+  </data>
+  <data name="&gt;&gt;nEDORadio.Name" xml:space="preserve">
+    <value>nEDORadio</value>
+  </data>
+  <data name="&gt;&gt;nEDORadio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nEDORadio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nEDORadio.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="MeantoneRadio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MeantoneRadio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 12</value>
+  </data>
+  <data name="MeantoneRadio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 29</value>
+  </data>
+  <data name="MeantoneRadio.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="MeantoneRadio.Text" xml:space="preserve">
+    <value>中全音律</value>
+  </data>
+  <data name="&gt;&gt;MeantoneRadio.Name" xml:space="preserve">
+    <value>MeantoneRadio</value>
+  </data>
+  <data name="&gt;&gt;MeantoneRadio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MeantoneRadio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MeantoneRadio.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="JIRadio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="JIRadio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 47</value>
+  </data>
+  <data name="JIRadio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 29</value>
+  </data>
+  <data name="JIRadio.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="JIRadio.Text" xml:space="preserve">
+    <value>純正律</value>
+  </data>
+  <data name="&gt;&gt;JIRadio.Name" xml:space="preserve">
+    <value>JIRadio</value>
+  </data>
+  <data name="&gt;&gt;JIRadio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JIRadio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;JIRadio.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="UserDifineRadio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UserDifineRadio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 47</value>
+  </data>
+  <data name="UserDifineRadio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 29</value>
+  </data>
+  <data name="UserDifineRadio.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="UserDifineRadio.Text" xml:space="preserve">
+    <value>ユーザ定義分割法</value>
+  </data>
+  <data name="&gt;&gt;UserDifineRadio.Name" xml:space="preserve">
+    <value>UserDifineRadio</value>
+  </data>
+  <data name="&gt;&gt;UserDifineRadio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserDifineRadio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UserDifineRadio.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="EDODirection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="EDODirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 135</value>
+  </data>
+  <data name="EDODirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 112</value>
+  </data>
+  <data name="EDODirection.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="EDODirection.Text" xml:space="preserve">
+    <value>nの横のフィールドに何平均律か入れてください。19EDOなら19を、7EDOなら7を入れてください。その下に、その平均律の時1stepあたり何centか示されます。
+</value>
+  </data>
+  <data name="&gt;&gt;EDODirection.Name" xml:space="preserve">
+    <value>EDODirection</value>
+  </data>
+  <data name="&gt;&gt;EDODirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EDODirection.Parent" xml:space="preserve">
+    <value>EDOPanel</value>
+  </data>
+  <data name="&gt;&gt;EDODirection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="IndicateEDO1step.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="IndicateEDO1step.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16pt</value>
+  </data>
+  <data name="IndicateEDO1step.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 72</value>
+  </data>
+  <data name="IndicateEDO1step.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 37</value>
+  </data>
+  <data name="IndicateEDO1step.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="IndicateEDO1step.Text" xml:space="preserve">
+    <value>n cent</value>
+  </data>
+  <data name="&gt;&gt;IndicateEDO1step.Name" xml:space="preserve">
+    <value>IndicateEDO1step</value>
+  </data>
+  <data name="&gt;&gt;IndicateEDO1step.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IndicateEDO1step.Parent" xml:space="preserve">
+    <value>EDOPanel</value>
+  </data>
+  <data name="&gt;&gt;IndicateEDO1step.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nEDOselect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 26</value>
+  </data>
+  <data name="nEDOselect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 31</value>
+  </data>
+  <data name="nEDOselect.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nEDOselect.Name" xml:space="preserve">
+    <value>nEDOselect</value>
+  </data>
+  <data name="&gt;&gt;nEDOselect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nEDOselect.Parent" xml:space="preserve">
+    <value>EDOPanel</value>
+  </data>
+  <data name="&gt;&gt;nEDOselect.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SayEDOn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SayEDOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 28</value>
+  </data>
+  <data name="SayEDOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 25</value>
+  </data>
+  <data name="SayEDOn.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SayEDOn.Text" xml:space="preserve">
+    <value>n =</value>
+  </data>
+  <data name="&gt;&gt;SayEDOn.Name" xml:space="preserve">
+    <value>SayEDOn</value>
+  </data>
+  <data name="&gt;&gt;SayEDOn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SayEDOn.Parent" xml:space="preserve">
+    <value>EDOPanel</value>
+  </data>
+  <data name="&gt;&gt;SayEDOn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="JIDirection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="JIDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 129</value>
+  </data>
+  <data name="JIDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 123</value>
+  </data>
+  <data name="JIDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="JIDirection.Text" xml:space="preserve">
+    <value>音数を決め、各step毎の純正比を入力してください。必ず音数と純正比の数を合わせてください。[ignore]が入ったstepはt0として書き出します。5-limit JIだったら、[1/1, 16/15, 9/8, 6/5, 5/4, 4/3, ignore, 3/2, 8/5, 5/3, 9/5, 15/8]のように書きます。
+
+</value>
+  </data>
+  <data name="&gt;&gt;JIDirection.Name" xml:space="preserve">
+    <value>JIDirection</value>
+  </data>
+  <data name="&gt;&gt;JIDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JIDirection.Parent" xml:space="preserve">
+    <value>JIPanel</value>
+  </data>
+  <data name="&gt;&gt;JIDirection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 95</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 31</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>JIPanel</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="JIIndicate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="JIIndicate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 65</value>
+  </data>
+  <data name="JIIndicate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 25</value>
+  </data>
+  <data name="JIIndicate.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="JIIndicate.Text" xml:space="preserve">
+    <value>純正比</value>
+  </data>
+  <data name="&gt;&gt;JIIndicate.Name" xml:space="preserve">
+    <value>JIIndicate</value>
+  </data>
+  <data name="&gt;&gt;JIIndicate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JIIndicate.Parent" xml:space="preserve">
+    <value>JIPanel</value>
+  </data>
+  <data name="&gt;&gt;JIIndicate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="JIonsuuUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="JIonsuuUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 31</value>
+  </data>
+  <data name="JIonsuuUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;JIonsuuUpDown.Name" xml:space="preserve">
+    <value>JIonsuuUpDown</value>
+  </data>
+  <data name="&gt;&gt;JIonsuuUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JIonsuuUpDown.Parent" xml:space="preserve">
+    <value>JIPanel</value>
+  </data>
+  <data name="&gt;&gt;JIonsuuUpDown.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="onnsuu.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="onnsuu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="onnsuu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 25</value>
+  </data>
+  <data name="onnsuu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="onnsuu.Text" xml:space="preserve">
+    <value>音数</value>
+  </data>
+  <data name="&gt;&gt;onnsuu.Name" xml:space="preserve">
+    <value>onnsuu</value>
+  </data>
+  <data name="&gt;&gt;onnsuu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;onnsuu.Parent" xml:space="preserve">
+    <value>JIPanel</value>
+  </data>
+  <data name="&gt;&gt;onnsuu.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="JIPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="JIPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 256</value>
+  </data>
+  <data name="JIPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;JIPanel.Name" xml:space="preserve">
+    <value>JIPanel</value>
+  </data>
+  <data name="&gt;&gt;JIPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JIPanel.Parent" xml:space="preserve">
+    <value>EDOPanel</value>
+  </data>
+  <data name="&gt;&gt;JIPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="EDOPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 128</value>
+  </data>
+  <data name="EDOPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 256</value>
+  </data>
+  <data name="EDOPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;EDOPanel.Name" xml:space="preserve">
+    <value>EDOPanel</value>
+  </data>
+  <data name="&gt;&gt;EDOPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EDOPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EDOPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="MeantoneOnnsuuUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 22</value>
+  </data>
+  <data name="MeantoneOnnsuuUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 31</value>
+  </data>
+  <data name="MeantoneOnnsuuUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;MeantoneOnnsuuUpDown.Name" xml:space="preserve">
+    <value>MeantoneOnnsuuUpDown</value>
+  </data>
+  <data name="&gt;&gt;MeantoneOnnsuuUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MeantoneOnnsuuUpDown.Parent" xml:space="preserve">
+    <value>MeantonePanel</value>
+  </data>
+  <data name="&gt;&gt;MeantoneOnnsuuUpDown.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MeantoneOnsuu.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MeantoneOnsuu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 24</value>
+  </data>
+  <data name="MeantoneOnsuu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 25</value>
+  </data>
+  <data name="MeantoneOnsuu.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="MeantoneOnsuu.Text" xml:space="preserve">
+    <value>音数</value>
+  </data>
+  <data name="&gt;&gt;MeantoneOnsuu.Name" xml:space="preserve">
+    <value>MeantoneOnsuu</value>
+  </data>
+  <data name="&gt;&gt;MeantoneOnsuu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MeantoneOnsuu.Parent" xml:space="preserve">
+    <value>MeantonePanel</value>
+  </data>
+  <data name="&gt;&gt;MeantoneOnsuu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="MeantoneDirection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="MeantoneDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 133</value>
+  </data>
+  <data name="MeantoneDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 112</value>
+  </data>
+  <data name="MeantoneDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="MeantoneDirection.Text" xml:space="preserve">
+    <value>音数を決め、五度の大きさを指定してください。701.96centから何cent引くか足すかを決めます。1/4コンマ中全音律なら-5.37を、1/3コンマ中全音律なら-7.18を入力します。
+</value>
+  </data>
+  <data name="&gt;&gt;MeantoneDirection.Name" xml:space="preserve">
+    <value>MeantoneDirection</value>
+  </data>
+  <data name="&gt;&gt;MeantoneDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MeantoneDirection.Parent" xml:space="preserve">
+    <value>MeantonePanel</value>
+  </data>
+  <data name="&gt;&gt;MeantoneDirection.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SizeOf5th.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SizeOf5th.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 71</value>
+  </data>
+  <data name="SizeOf5th.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 25</value>
+  </data>
+  <data name="SizeOf5th.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SizeOf5th.Text" xml:space="preserve">
+    <value>五度の大きさ</value>
+  </data>
+  <data name="&gt;&gt;SizeOf5th.Name" xml:space="preserve">
+    <value>SizeOf5th</value>
+  </data>
+  <data name="&gt;&gt;SizeOf5th.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SizeOf5th.Parent" xml:space="preserve">
+    <value>MeantonePanel</value>
+  </data>
+  <data name="&gt;&gt;SizeOf5th.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Meantone5thUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 99</value>
+  </data>
+  <data name="Meantone5thUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 31</value>
+  </data>
+  <data name="Meantone5thUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Meantone5thUpDown.Name" xml:space="preserve">
+    <value>Meantone5thUpDown</value>
+  </data>
+  <data name="&gt;&gt;Meantone5thUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Meantone5thUpDown.Parent" xml:space="preserve">
+    <value>MeantonePanel</value>
+  </data>
+  <data name="&gt;&gt;Meantone5thUpDown.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="MeantonePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 128</value>
+  </data>
+  <data name="MeantonePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 256</value>
+  </data>
+  <data name="MeantonePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;MeantonePanel.Name" xml:space="preserve">
+    <value>MeantonePanel</value>
+  </data>
+  <data name="&gt;&gt;MeantonePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MeantonePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MeantonePanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="UserDifineDirection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="UserDifineDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 129</value>
+  </data>
+  <data name="UserDifineDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 123</value>
+  </data>
+  <data name="UserDifineDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="UserDifineDirection.Text" xml:space="preserve">
+    <value>音数を決め、各step毎の純正比を入力してください。必ず音数と純正比の数を合わせてください。[ignore]が入ったstepはt0として書き出します。5-limit JIだったら、[1/1, 16/15, 9/8, 6/5, 5/4, 4/3, ignore, 3/2, 8/5, 5/3, 9/5, 15/8]のように書きます。
+
+</value>
+  </data>
+  <data name="&gt;&gt;UserDifineDirection.Name" xml:space="preserve">
+    <value>UserDifineDirection</value>
+  </data>
+  <data name="&gt;&gt;UserDifineDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserDifineDirection.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;UserDifineDirection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="UserDifinePitches.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 95</value>
+  </data>
+  <data name="UserDifinePitches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 31</value>
+  </data>
+  <data name="UserDifinePitches.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePitches.Name" xml:space="preserve">
+    <value>UserDifinePitches</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePitches.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePitches.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePitches.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="UserDifineCents.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UserDifineCents.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="UserDifineCents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 25</value>
+  </data>
+  <data name="UserDifineCents.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="UserDifineCents.Text" xml:space="preserve">
+    <value>ユーザ定義分割</value>
+  </data>
+  <data name="&gt;&gt;UserDifineCents.Name" xml:space="preserve">
+    <value>UserDifineCents</value>
+  </data>
+  <data name="&gt;&gt;UserDifineCents.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserDifineCents.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;UserDifineCents.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="UserDifineUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="UserDifineUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 31</value>
+  </data>
+  <data name="UserDifineUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;UserDifineUpDown.Name" xml:space="preserve">
+    <value>UserDifineUpDown</value>
+  </data>
+  <data name="&gt;&gt;UserDifineUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserDifineUpDown.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;UserDifineUpDown.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="UserDifineOnnsuu.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="UserDifineOnnsuu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="UserDifineOnnsuu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 25</value>
+  </data>
+  <data name="UserDifineOnnsuu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="UserDifineOnnsuu.Text" xml:space="preserve">
+    <value>音数</value>
+  </data>
+  <data name="&gt;&gt;UserDifineOnnsuu.Name" xml:space="preserve">
+    <value>UserDifineOnnsuu</value>
+  </data>
+  <data name="&gt;&gt;UserDifineOnnsuu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserDifineOnnsuu.Parent" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;UserDifineOnnsuu.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="UserDifinePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 128</value>
+  </data>
+  <data name="UserDifinePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 256</value>
+  </data>
+  <data name="UserDifinePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePanel.Name" xml:space="preserve">
+    <value>UserDifinePanel</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UserDifinePanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16.8pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 47</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 38</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>✘</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16.8pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 9</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 38</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>✘</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16.8pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 47</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 38</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>✘</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>402, 453</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>分割設定</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DivitionSetting</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
